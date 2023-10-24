@@ -1,0 +1,148 @@
+:root {
+    --primary-color:    #FFD449;
+    --secondary-color:  #03CFFC;
+    --bg-color        : rgb(24, 23, 23);
+    --githubColor       : #252525;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    min-height: 420px;
+  }
+
+.jumbotron a{ 
+    background-color: var(--primary-color);
+    width: 160px;
+    height: auto;
+}
+
+.jumbotron a:hover {
+    background-color: #ffe89c;
+}
+
+.jumbotron {
+    background-image: url(../images/bg-hero.gif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 2rem;  
+    transform: (-50%, -50%);
+}
+
+.jumbotron img {
+    width: 40%;
+}
+
+.jumbotron h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-top: 10px;
+}
+
+.jumbotron p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(236, 230, 230);
+}
+/* 
+.typing > * {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnimasi 3s steps(27);
+}
+
+@keyframes typingAnimasi {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+} */
+
+/* About */
+.about {
+    min-height: 70vh;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.about i {
+    font-size: 2rem;
+    margin-right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Portfolio */
+.portfolio {
+    min-height: 100vh;
+    padding-top: 0;
+    background-color: var(--bg-color);
+}
+
+.portfolio a {
+    background-color: var(--githubColor);
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.portfolio a:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.portfolio .card {
+    padding-bottom: 1rem;
+    background-color: #f8f8f8;
+}
+
+.portfolio h2 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Contact */
+.contact {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.contact span {
+    color: black;
+}
+
+.contact .card-body {
+    color: black;
+}
+
+.contact h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .jumbotron {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 983px) {
+    .portfolio .card {
+        margin-top: 2rem;
+    }
+}
